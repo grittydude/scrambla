@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.squash.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_subCategoryFragment"
+            app:destination="@id/subCategoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_game"
+            app:destination="@id/game" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.squash.fragments.MenuFragment"
+        android:label="menuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_menuFragment_to_dropAFeedBack"
+            app:destination="@id/dropAFeedBack" />
+        <action
+            android:id="@+id/action_menuFragment_to_notifications"
+            app:destination="@id/notifications" />
+        <action
+            android:id="@+id/action_menuFragment_to_privacy_policy"
+            app:destination="@id/privacy_policy" />
+        <action
+            android:id="@+id/action_menuFragment_to_login_page_fragment2"
+            app:destination="@id/login_page_fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/playSquashFragment"
+        android:name="com.example.squash.fragments.PlaySquashFragment"
+        android:label="playSquashFragment"
+        tools:layout="@layout/fragment_play_squash">
+        <action
+            android:id="@+id/action_playSquashFragment_to_game"
+            app:destination="@id/game" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit_Profile"
+        android:name="com.example.squash.fragments.EditProfile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <argument
+            android:name="user"
+            app:argType="com.example.squash.datasource.Users" />
+        <action
+            android:id="@+id/action_edit_Profile_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.squash.fragments.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_edit_Profile"
+            app:destination="@id/edit_Profile" />
+        <action
+            android:id="@+id/action_profile_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dropAFeedBack"
+        android:name="com.example.squash.fragments.DropAFeedBack"
+        android:label="fragment_drop_a_feed_back"
+        tools:layout="@layout/fragment_drop_a_feed_back" >
+        <action
+            android:id="@+id/action_dropAFeedBack_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.example.squash.fragments.Notifications"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_notifications_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacy_policy"
+        android:name="com.example.squash.fragments.PrivacyPolicy"
+        android:label="privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy">
+        <action
+            android:id="@+id/action_privacy_policy_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_page_fragment2"
+        android:name="com.example.squash.fragments.LoginPageFragment"
+        android:label="Login_page_fragment" />
+    <fragment
+        android:id="@+id/game"
+        android:name="com.example.squash.game.Game"
+        android:label="Game" >
+        <action
+            android:id="@+id/action_game_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subCategoryFragment"
+        android:name="com.example.squash.fragments.SubCategoryFragment"
+        android:label="SubCategoryFragment" >
+        <action
+            android:id="@+id/action_subCategoryFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_subCategoryFragment_to_game"
+            app:destination="@id/game" />
+    </fragment>
+</navigation>

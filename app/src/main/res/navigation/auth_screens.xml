@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_screens"
+    app:startDestination="@id/login_page_fragment">
+    <fragment
+        android:id="@+id/forgot_password_fragment3"
+        android:name="com.example.squash.fragments.ForgotPasswordFragment"
+        android:label="Forgot_password_fragment"
+        tools:layout="@layout/fragment_forgot_password_fragment"/>
+    <fragment
+        android:id="@+id/login_page_fragment"
+        android:name="com.example.squash.fragments.LoginPageFragment"
+        android:label="Login_page_fragment"
+        tools:layout="@layout/fragment_login_page_fragment">
+        <action
+            android:id="@+id/action_login_page_fragment_to_register_fragment"
+            app:destination="@id/register_fragment" />
+        <action
+            android:id="@+id/action_login_page_fragment_to_forgot_password_fragment3"
+            app:destination="@id/forgot_password_fragment3"
+            app:popUpTo="@id/forgot_password_fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.example.squash.fragments.RegisterFragment"
+        android:label="Register_fragment"
+        tools:layout="@layout/fragment_register_fragment">
+        <action
+            android:id="@+id/action_register_fragment_to_login_page_fragment"
+            app:destination="@id/login_page_fragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

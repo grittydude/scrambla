@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="4dp"
+        android:background="@drawable/custom_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/circle_border"
+            android:padding="9dp"
+            android:src="@drawable/wordsplashlogo" />
+
+        <ImageView
+            android:id="@+id/wow"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:padding="1dp"
+            android:visibility="gone"
+            app:tint="#2980A8"
+            android:src="@drawable/wow" />
+
+        <ImageView
+            android:id="@+id/sad"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:visibility="gone"
+            app:tint="#FC4242"
+            android:background="@drawable/sad_background"
+            android:padding="9dp"
+            android:src="@drawable/sad" />
+
+        <ImageView
+            android:id="@+id/good"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="60dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:padding="2dp"
+            android:src="@drawable/graet"
+            app:tint="#FFEB3B" />
+
+        <TextView
+            android:id="@+id/congrats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Congratulations"
+            android:textColor="@color/fade_black"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/wow_congrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wow"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Wow"
+            android:textColor="@color/fade_black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/hat"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/wow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="1dp"
+            android:visibility="gone"
+            android:padding="3dp"
+            android:layout_toEndOf="@+id/wow_congrat"
+            android:src="@drawable/phd" />
+
+        <TextView
+            android:id="@+id/wow_congrats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wow"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Congratulations"
+            android:textColor="@color/fade_black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sad"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Game over!"
+            android:visibility="gone"
+            android:textColor="#FC4242"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/good"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Nice one"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_good_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_good"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            tools:text="You Scored 100!"
+            android:textColor="@color/fade_black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/You"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/congrats"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            tools:text="You Scored 100!"
+            android:textColor="@color/fade_black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wow_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wow_congrat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            tools:text="You Scored 100!"
+            android:textColor="@color/fade_black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/your_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            tools:text="You Scored 100!"
+            android:textColor="@color/fade_black"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exitGame"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/main_color_border"
+                android:text="Exit"
+                android:layout_margin="20dp"
+                android:textAllCaps="false"
+                android:textColor="@color/main_primary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/play_again"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/hey"
+                android:text="Play again"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

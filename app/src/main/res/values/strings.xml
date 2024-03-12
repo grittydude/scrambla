@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Squash</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="choose_a_category">Choose a category</string>
+    <string name="select">Select a category that best suits your area of expertise</string>
+    <string name="f">Find the word that best suits the unscrambled word</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="find_the_word">Find the word</string>
+    <string name="get">Get the meaning of every word you are \nable to unscramble</string>
+    <string name="know_the_word">Know the word</string>
+    <string name="enter_the_email_associated_with_your_account">Enter the email associated with your account</string>
+    <string name="registration_successful">Registration Successful</string>
+    <string name="search">Search</string>
+    <string name="less_than_150_words">less thanwords</string>
+    <string name="welcome">Welcome, %s</string>
+    <string name="amaka">Your Username: %s</string>
+    <string name="about">About me: %s</string>
+    <string name="justin_gmail_com">Your Email:%s</string>
+    <string name="wordcount">%d of %d words</string>
+    <string name="score">Score : %d</string>
+    <string name="hint">The first letter is: %s</string>
+    <string-array name="category">
+        <item>Medicine</item>
+        <item>Sport</item>
+        <item>Finance</item>
+        <item>Random</item>
+        <item>Countries</item>
+    </string-array>
+
+    <string-array name="timer">
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>4 minutes</item>
+        <item>5 minutes</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>python</item>
+        <item>python</item>
+        <item>python</item>
+        <item>python</item>
+    </string-array>
+</resources>

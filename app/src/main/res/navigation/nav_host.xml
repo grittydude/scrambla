@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/splashScreenFragment">
+    <fragment
+        android:id="@+id/onBoardingScreen"
+        android:name="com.example.squash.fragments.OnBoardingScreen"
+        android:label="fragment_on_boarding_screen"
+        tools:layout="@layout/fragment_on_boarding_screen" >
+        <action
+            android:id="@+id/action_onBoardingScreen_to_authScreens"
+            app:destination="@id/authScreens" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.squash.fragments.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_onBoardingScreen"
+            app:destination="@id/onBoardingScreen" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_authScreens"
+            app:destination="@id/authScreens" />
+    </fragment>
+    <activity
+        android:id="@+id/authScreens"
+        android:name="com.example.squash.activities.AuthScreenActivity"
+        android:label="activity_auth_screens"
+        tools:layout="@layout/activity_auth_screens" />
+</navigation>

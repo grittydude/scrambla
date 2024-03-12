@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.example.squash.fragments.MenuFragment">
+
+            <TextView
+                android:id="@+id/textViewMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/poppins"
+                android:text="Menu"
+                android:textColor="#B3000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewMenu">
+
+                <LinearLayout
+                    android:id="@+id/linearProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_background"
+                        android:padding="5dp"
+                        android:src="@drawable/person"
+                        app:tint="#428DFC" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/montserrat_alternates"
+                        android:text="Profile"
+                        android:textSize="16sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/next"
+                            app:tint="#828282" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_privacy_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_background"
+                        android:padding="5dp"
+                        android:src="@drawable/lock"
+                        app:tint="#428DFC" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/montserrat_alternates"
+                        android:text="Privacy Policy"
+                        android:textSize="16sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/next"
+                            app:tint="#828282" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_background"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_baseline_share_24"
+                        app:tint="#428DFC" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/montserrat_alternates"
+                        android:text="Share"
+                        android:textSize="16sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/next"
+                            app:tint="#828282" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rateUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_background"
+                        android:padding="7dp"
+                        android:src="@drawable/rate"
+                        app:tint="#428DFC" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/montserrat_alternates"
+                        android:text="Rate us"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/next"
+                            app:tint="#828282" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDropFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_background"
+                        android:padding="7dp"
+                        android:src="@drawable/feedback"
+                        app:tint="#428DFC" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/montserrat_alternates"
+                        android:text="Drop a feedback"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/next"
+                            app:tint="#828282" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_background"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_baseline_login_24"
+                        app:tint="#428DFC" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/montserrat_alternates"
+                        android:text="Log out"
+                        android:textSize="16sp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/next"
+                            app:tint="#828282" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</ScrollView>

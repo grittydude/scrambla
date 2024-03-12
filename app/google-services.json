@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1047111678627",
+    "project_id": "brainscrambla",
+    "storage_bucket": "brainscrambla.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047111678627:android:d89e1e19585b21db65dd16",
+        "android_client_info": {
+          "package_name": "com.grittydude.brainscrambla"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDguBni1CnrIujbEwcNg7tAE1G1e3eOHR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

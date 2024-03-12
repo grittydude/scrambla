@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/sub_category_stroke"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sub_category_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="#B3000000"
+            android:text="Nursing"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sub_play"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/hey"
+            android:text="Play"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/sub_category_textview"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sub_category_textview" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

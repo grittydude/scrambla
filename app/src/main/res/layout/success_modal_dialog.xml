@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:paddingTop="30dp"
+        android:layout_width="250dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/custom_dialog"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/registration_successful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins"
+            android:text="@string/registration_successful" />
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/send" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_icon"
+            android:layout_marginStart="-24dp"
+            android:layout_marginTop="-16dp"
+            android:layout_toEndOf="@+id/image_icon"
+            android:src="@drawable/good" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registration_successful"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/hey"
+            android:text="continue"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp"
+            tools:context="com.example.squash.game.Game">
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/hint"
+                app:layout_constraintEnd_toEndOf="@id/submit"
+                app:layout_constraintStart_toStartOf="@id/skip"
+                app:layout_constraintTop_toTopOf="@+id/hint"
+                tools:text="35" />
+
+            <TextView
+                android:id="@+id/word_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="#B3000000"
+                android:textSize="17sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="2/10 words" />
+
+            <TextView
+                android:id="@+id/score_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Score"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/score"
+                app:layout_constraintEnd_toEndOf="@+id/score"
+                app:layout_constraintStart_toStartOf="@+id/score"
+                />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toTopOf="@+id/word"
+                app:layout_constraintEnd_toEndOf="@+id/word"
+                app:layout_constraintStart_toStartOf="@+id/word"
+                tools:text="200" />
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="HOHADISS" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppins"
+                android:text="Guess the correct word"
+                android:textColor="#B3000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/word" />
+
+            <TextView
+                android:id="@+id/text_meaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="#B3000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/hint"
+                app:layout_constraintTop_toBottomOf="@+id/hint" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Type your answer"
+                    android:textColorHint="#66000000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/hint"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="19dp"
+                android:src="@drawable/ic_baseline_help_outline_24"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hey"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/skip"
+                app:layout_constraintEnd_toEndOf="@+id/layout"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/skip"
+                 />
+
+            <nl.dionsegijn.konfetti.KonfettiView
+                android:id="@+id/konfetti"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/skip"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/main_color_border"
+                android:text="Skip"
+                android:textAllCaps="false"
+                android:textColor="@color/main_primary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/text_meaning"
+                app:layout_constraintTop_toBottomOf="@+id/text_meaning" />
+
+
+            <TextView
+                android:id="@+id/quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quit game"
+                android:textAllCaps="false"
+                android:textColor="#FC4242"
+                android:padding="4dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/word_count"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/word_count" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>
