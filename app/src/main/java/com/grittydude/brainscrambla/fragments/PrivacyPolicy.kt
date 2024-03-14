@@ -1,4 +1,4 @@
-
+package com.grittydude.brainscrambla.fragments
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +8,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.grittydude.brainscrambla.R
 import com.grittydude.brainscrambla.databinding.FragmentPrivacyPolicyBinding
+import com.grittydude.brainscrambla.datasource.Constants
 
 
 class PrivacyPolicy : Fragment() {

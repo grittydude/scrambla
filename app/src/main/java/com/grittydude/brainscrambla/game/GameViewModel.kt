@@ -1,7 +1,9 @@
-
+package com.grittydude.brainscrambla.game
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.grittydude.brainscrambla.datasource.INCREASE_SCORE
+import com.grittydude.brainscrambla.datasource.MAX_NO_WORDS
 
 class GameViewModel : ViewModel() {
 

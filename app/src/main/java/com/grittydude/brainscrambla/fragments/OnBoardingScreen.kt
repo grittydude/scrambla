@@ -1,16 +1,19 @@
-
+package com.grittydude.brainscrambla.fragments
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.grittydude.brainscrambla.R
+import com.grittydude.brainscrambla.activities.AuthScreenActivity
+import com.grittydude.brainscrambla.databinding.FragmentOnBoardingScreenBinding
+import com.grittydude.brainscrambla.datasource.Constants
 
 
 class OnBoardingScreen : Fragment(), ViewPager.OnPageChangeListener {

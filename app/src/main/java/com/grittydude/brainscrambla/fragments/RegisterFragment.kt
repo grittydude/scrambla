@@ -1,4 +1,4 @@
-
+package com.grittydude.brainscrambla.fragments
 import android.app.AlertDialog
 import android.os.Bundle
 import android.text.TextUtils
@@ -13,15 +13,15 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
-import com.example.squash.R
-import com.example.squash.databinding.FragmentRegisterFragmentBinding
-import com.example.squash.datasource.Constants
-import com.example.squash.datasource.Users
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
+import com.grittydude.brainscrambla.R
+import com.grittydude.brainscrambla.databinding.FragmentRegisterFragmentBinding
+import com.grittydude.brainscrambla.datasource.Constants
+import com.grittydude.brainscrambla.datasource.Users
 
 class RegisterFragment : Fragment() {
 

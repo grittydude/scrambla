@@ -1,3 +1,5 @@
+package com.grittydude.brainscrambla.datasource
+
 object Constants {
 
     const val USERNAME = "username"

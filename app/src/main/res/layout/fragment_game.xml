@@ -10,8 +10,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="40dp"
-            tools:context="com.example.squash.game.Game">
+            android:paddingBottom="40dp">
 
             <TextView
                 android:id="@+id/timer"

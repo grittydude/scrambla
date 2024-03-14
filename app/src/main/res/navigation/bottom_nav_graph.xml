@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.squash.fragments.HomeFragment"
+        android:name="com.grittydude.brainscrambla.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.example.squash.fragments.MenuFragment"
+        android:name="com.grittydude.brainscrambla.fragments.MenuFragment"
         android:label="menuFragment" >
         <action
             android:id="@+id/action_menuFragment_to_profile"
@@ -27,9 +27,6 @@
         <action
             android:id="@+id/action_menuFragment_to_dropAFeedBack"
             app:destination="@id/dropAFeedBack" />
-        <action
-            android:id="@+id/action_menuFragment_to_notifications"
-            app:destination="@id/notifications" />
         <action
             android:id="@+id/action_menuFragment_to_privacy_policy"
             app:destination="@id/privacy_policy" />
@@ -39,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/playSquashFragment"
-        android:name="com.example.squash.fragments.PlaySquashFragment"
+        android:name="com.grittydude.brainscrambla.fragments.PlaySquashFragment"
         android:label="playSquashFragment"
         tools:layout="@layout/fragment_play_squash">
         <action
@@ -48,19 +45,20 @@
     </fragment>
     <fragment
         android:id="@+id/edit_Profile"
-        android:name="com.example.squash.fragments.EditProfile"
+        android:name="com.grittydude.brainscrambla.fragments.EditProfile"
         android:label="fragment_edit_profile"
         tools:layout="@layout/fragment_edit_profile" >
-        <argument
-            android:name="user"
-            app:argType="com.example.squash.datasource.Users" />
+
         <action
             android:id="@+id/action_edit_Profile_to_profile"
             app:destination="@id/profile" />
+        <argument
+            android:name="user"
+            app:argType="com.grittydude.brainscrambla.datasource.Users" />
     </fragment>
     <fragment
         android:id="@+id/profile"
-        android:name="com.example.squash.fragments.Profile"
+        android:name="com.grittydude.brainscrambla.fragments.Profile"
         android:label="Profile"
         tools:layout="@layout/fragment_profile">
         <action
@@ -72,7 +70,7 @@
     </fragment>
     <fragment
         android:id="@+id/dropAFeedBack"
-        android:name="com.example.squash.fragments.DropAFeedBack"
+        android:name="com.grittydude.brainscrambla.fragments.DropAFeedBack"
         android:label="fragment_drop_a_feed_back"
         tools:layout="@layout/fragment_drop_a_feed_back" >
         <action
@@ -80,17 +78,8 @@
             app:destination="@id/menuFragment" />
     </fragment>
     <fragment
-        android:id="@+id/notifications"
-        android:name="com.example.squash.fragments.Notifications"
-        android:label="fragment_notifications"
-        tools:layout="@layout/fragment_notifications" >
-        <action
-            android:id="@+id/action_notifications_to_menuFragment"
-            app:destination="@id/menuFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/privacy_policy"
-        android:name="com.example.squash.fragments.PrivacyPolicy"
+        android:name="com.grittydude.brainscrambla.fragments.PrivacyPolicy"
         android:label="privacy_policy"
         tools:layout="@layout/fragment_privacy_policy">
         <action
@@ -99,11 +88,11 @@
     </fragment>
     <fragment
         android:id="@+id/login_page_fragment2"
-        android:name="com.example.squash.fragments.LoginPageFragment"
+        android:name="com.grittydude.brainscrambla.fragments.LoginPageFragment"
         android:label="Login_page_fragment" />
     <fragment
         android:id="@+id/game"
-        android:name="com.example.squash.game.Game"
+        android:name="com.grittydude.brainscrambla.game.Game"
         android:label="Game" >
         <action
             android:id="@+id/action_game_to_homeFragment"
@@ -111,7 +100,7 @@
     </fragment>
     <fragment
         android:id="@+id/subCategoryFragment"
-        android:name="com.example.squash.fragments.SubCategoryFragment"
+        android:name="com.grittydude.brainscrambla.fragments.SubCategoryFragment"
         android:label="SubCategoryFragment" >
         <action
             android:id="@+id/action_subCategoryFragment_to_homeFragment"

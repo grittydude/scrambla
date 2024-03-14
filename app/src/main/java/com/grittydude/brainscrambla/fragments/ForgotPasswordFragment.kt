@@ -1,13 +1,14 @@
-
+package com.grittydude.brainscrambla.fragments
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.grittydude.brainscrambla.databinding.FragmentForgotPasswordFragmentBinding
 
 
 class ForgotPasswordFragment : Fragment() {

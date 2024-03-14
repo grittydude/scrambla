@@ -1,3 +1,7 @@
+package com.grittydude.brainscrambla.data
+
+import com.grittydude.brainscrambla.datasource.SubCategories
+
 class DataSource {
 
     fun loadMedicineOccupation() : ArrayList<SubCategories> {

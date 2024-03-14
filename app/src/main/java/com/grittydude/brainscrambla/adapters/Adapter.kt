@@ -1,11 +1,11 @@
-
+package com.grittydude.brainscrambla.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.squash.data.Occupations
 import com.grittydude.brainscrambla.R
+import com.grittydude.brainscrambla.data.Occupations
 
 class Adapter(private val userOccupations: ArrayList<Occupations>):
     RecyclerView.Adapter<Adapter.ViewHolder>()  {

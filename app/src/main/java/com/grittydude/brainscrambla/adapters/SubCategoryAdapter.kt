@@ -1,4 +1,4 @@
-
+package com.grittydude.brainscrambla.adapters
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +8,7 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.grittydude.brainscrambla.R
+import com.grittydude.brainscrambla.datasource.SubCategories
 
 class SubCategoryAdapter(private var subCategories: ArrayList<SubCategories>): RecyclerView.Adapter<SubCategoryAdapter.ViewHolder>() {
 

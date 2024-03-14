@@ -1,4 +1,4 @@
-
+package com.grittydude.brainscrambla.game
 import android.app.AlertDialog
 import android.graphics.Color
 import android.media.MediaPlayer
@@ -17,6 +17,17 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.grittydude.brainscrambla.R
 import com.grittydude.brainscrambla.databinding.FragmentGameBinding
+import com.grittydude.brainscrambla.datasource.MAX_NO_WORDS
+import com.grittydude.brainscrambla.datasource.allWordsList
+import com.grittydude.brainscrambla.datasource.android_development
+import com.grittydude.brainscrambla.datasource.c_plus_plus
+import com.grittydude.brainscrambla.datasource.countries
+import com.grittydude.brainscrambla.datasource.finance
+import com.grittydude.brainscrambla.datasource.kotlin_language
+import com.grittydude.brainscrambla.datasource.medicine
+import com.grittydude.brainscrambla.datasource.product_design
+import com.grittydude.brainscrambla.datasource.python
+import com.grittydude.brainscrambla.datasource.sports
 import nl.dionsegijn.konfetti.models.Shape
 import nl.dionsegijn.konfetti.models.Size
 
@@ -66,17 +77,38 @@ class Game : Fragment() {
         getData = args?.getString("cat").toString()
         val getTimer = args?.getString("time").toString()
 
-        if (getData == "Medicine") {
-            viewModel.getNextWord(medicine)
-        } else if (getData == "Sport") {
-            viewModel.getNextWord(sports)
-        } else if (getData == "Finance") {
-            viewModel.getNextWord(finance)
+        when (getData) {
+            "Medicine" -> {
+                viewModel.getNextWord(medicine)
+            }
+            "Android" -> {
+                viewModel.getNextWord(android_development)
+            }
+            "Python" -> {
+                viewModel.getNextWord(python)
+            }
+            "C++" -> {
+                viewModel.getNextWord(c_plus_plus)
+            }
+            "Kotlin" -> {
+                viewModel.getNextWord(kotlin_language)
+            }
+            "Product Design" -> {
+                viewModel.getNextWord(product_design)
+            }
+            "Sport" -> {
+                viewModel.getNextWord(sports)
+            }
+            "Finance" -> {
+                viewModel.getNextWord(finance)
 
-        } else if (getData == "Random") {
-            viewModel.getNextWord(allWordsList)
-        } else if (getData == "Countries") {
-            viewModel.getNextWord(countries)
+            }
+            "Random" -> {
+                viewModel.getNextWord(allWordsList)
+            }
+            "Countries" -> {
+                viewModel.getNextWord(countries)
+            }
         }
 
         when (getTimer) {
@@ -335,8 +367,7 @@ class Game : Fragment() {
 
     private fun getArgument() {
         val args = this.arguments
-        val getData = args?.get("name")
-        when (getData) {
+        when (args?.get("name")) {
             "Medicine" -> {
                 viewModel.getNextWord(medicine)
 
@@ -355,6 +386,21 @@ class Game : Fragment() {
 
             "Finance" -> {
                 viewModel.getNextWord(finance)
+            }
+            "Android" -> {
+                viewModel.getNextWord(android_development)
+            }
+            "Python" -> {
+                viewModel.getNextWord(python)
+            }
+            "C++" -> {
+                viewModel.getNextWord(c_plus_plus)
+            }
+            "Kotlin" -> {
+                viewModel.getNextWord(kotlin_language)
+            }
+            "Product Design" -> {
+                viewModel.getNextWord(product_design)
             }
         }
     }

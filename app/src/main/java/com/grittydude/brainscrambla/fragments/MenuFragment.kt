@@ -1,4 +1,4 @@
-
+package com.grittydude.brainscrambla.fragments
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
@@ -11,11 +11,10 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.squash.R
-import com.example.squash.activities.AuthScreenActivity
-import com.example.squash.databinding.FragmentMenuBinding
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.logout_modal.*
+import com.grittydude.brainscrambla.R
+import com.grittydude.brainscrambla.activities.AuthScreenActivity
+import com.grittydude.brainscrambla.databinding.FragmentMenuBinding
 
 class MenuFragment : Fragment() {
 

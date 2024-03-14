@@ -1,25 +1,25 @@
-
+package com.grittydude.brainscrambla.fragments
+import com.grittydude.brainscrambla.data.DataSource
+import com.grittydude.brainscrambla.adapters.SubCategoryAdapter
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.squash.R
-import com.example.squash.adapters.SubCategoryAdapter
-import com.example.squash.data.DataSource
-import com.example.squash.databinding.FragmentSubCategory2Binding
-import com.example.squash.datasource.SubCategories
+import com.grittydude.brainscrambla.R
+import com.grittydude.brainscrambla.databinding.FragmentSubCategory2Binding
+import com.grittydude.brainscrambla.datasource.SubCategories
 
 
 class SubCategoryFragment : Fragment() {
 
     private lateinit var binding: FragmentSubCategory2Binding
     private  var subCategories = ArrayList<SubCategories>()
-    private  var adapter =  SubCategoryAdapter(subCategories)
+    private  var adapter = SubCategoryAdapter(subCategories)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

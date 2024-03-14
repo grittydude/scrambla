@@ -1,6 +1,8 @@
+package com.grittydude.brainscrambla.datasource
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
+
 
 @Parcelize
 data class Users (

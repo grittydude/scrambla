@@ -1,12 +1,13 @@
-
+package com.grittydude.brainscrambla.activities
+import com.grittydude.brainscrambla.data.DataSource
+import com.grittydude.brainscrambla.adapters.SubCategoryAdapter
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.squash.adapters.SubCategoryAdapter
-import com.example.squash.datasource.SubCategories
-import kotlin.collections.ArrayList
+import com.grittydude.brainscrambla.databinding.ActivitySubCategoryBinding
+import com.grittydude.brainscrambla.datasource.SubCategories
 
 class SubCategory : AppCompatActivity() {
 

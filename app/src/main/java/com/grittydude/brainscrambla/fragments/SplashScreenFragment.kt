@@ -1,18 +1,15 @@
-
+package com.grittydude.brainscrambla.fragments
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.squash.activities.LandingPage
-import com.example.squash.R
-import com.example.squash.datasource.Constants
 import com.google.firebase.auth.FirebaseAuth
+import com.grittydude.brainscrambla.R
+import com.grittydude.brainscrambla.datasource.Constants
 
 class SplashScreenFragment : Fragment() {
 
@@ -33,7 +30,7 @@ class SplashScreenFragment : Fragment() {
 //
 //            splashScreenImage.animate().setDuration(1500).alpha(1f).withEndAction {
 //                if (checkOnBoardingState() && CheckLoggedInState() ){
-//                    val intent = Intent(requireContext(), LandingPage::class.java)
+//                    val intent = Intent(requireContext(), com.grittydude.brainscrambla.activities.LandingPage::class.java)
 //                    activity?.startActivity(intent)
 //                }else if (checkOnBoardingState()){
 //                  navigateTo(R.id.action_splashScreenFragment_to_authScreens)

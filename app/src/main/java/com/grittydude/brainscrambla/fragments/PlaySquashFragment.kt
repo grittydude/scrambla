@@ -1,14 +1,15 @@
-
+package com.grittydude.brainscrambla.fragments
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.grittydude.brainscrambla.R
+import com.grittydude.brainscrambla.databinding.FragmentPlaySquashBinding
 
 
 class PlaySquashFragment : Fragment() {

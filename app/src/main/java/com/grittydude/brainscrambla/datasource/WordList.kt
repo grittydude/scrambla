@@ -1,4 +1,4 @@
-
+package com.grittydude.brainscrambla.datasource
 const val MAX_NO_WORDS = 20
 const val INCREASE_SCORE = 5
 val allWordsList: List<String> =
@@ -209,7 +209,6 @@ val medicine: List<String> =
         "healthcare",
         "treat",
         "gynecologist",
-        "medicine",
         "pediatric",
         "caregiver",
         "Medicine",
@@ -309,4 +308,27 @@ val sports: List<String> =
         "ice hockey"
     )
 
+val product_design : List<String> =
+    listOf(
+        "design", "user", "research", "test", "sketch", "prototype", "product", "usability", "interface", "wireframe", "feedback", "iteration", "collaboration", "ideation", "brainstorming", "creative", "features", "aesthetics", "materials", "function", "manufacturability", "manufacturing", "quality", "timeline","solution", "agile", "sprints", "scrum", "backlog", "figma", "frame", "component", "variants"
+    )
+
+val android_development: List<String> =
+    listOf("Java", "Kotlin", "IDE", "APK", "source code", "Android SDK", "Gradle", "library", "package", "repository", "build", "testing", "emulator", "debugging", "Android manifest", "AVD", "NDK", "device", "ABI", "APK build", "Android NDK", "native app", "cross-platform", "frameworks", "C++"
+    )
+
+val python: List<String> =
+    listOf(
+        "pip", "virtualenv", "IDLE", "PyPI", "NumPy", "SciPy", "pandas", "syntax", "code", "library", "command line", "shell", "script", "interpreter", "debugging", "terminal", "standard library", "python documentation", "version", "Jupyter", "Anaconda", "Django", "Flask", "TensorFlow","OpenCV"
+    )
+
+val c_plus_plus : List<String> =
+    listOf(
+        "class", "object", "pointers", "pointers", "stdlib", "stdio", "const", "header", "include", "files", "compile", "link", "linker", "linker error", "library", "dll", "binary", "program", "executable", "main", "return", "int main", "printf", "cout", "cin", "stdout", "string", "vector", "array", "algorithm"
+    )
+
+val kotlin_language: List<String> =
+    listOf(
+        "JVM", "IntelliJ", "JetBrains", "Android", "JVM languages", "coroutines", "lambdas", "concurrency", "concurrent", "channel", "composable", "compose", "extension", "function", "package", "module", "data class", "singleton", "companion object", "typealias", "lateinit", "sealed class", "sealed", "interface"
+    )
 

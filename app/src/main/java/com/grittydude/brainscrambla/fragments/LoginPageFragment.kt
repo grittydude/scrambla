@@ -1,38 +1,32 @@
+package com.grittydude.brainscrambla.fragments
 
+import com.grittydude.brainscrambla.activities.LandingPage
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
-import com.example.squash.activities.LandingPage
-import com.example.squash.R
-import com.example.squash.databinding.FragmentLoginPageFragmentBinding
-import com.example.squash.datasource.Constants
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.tasks.Task
 import com.google.android.material.snackbar.Snackbar
-
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.grittydude.brainscrambla.R
+import com.grittydude.brainscrambla.databinding.FragmentLoginPageFragmentBinding
+import com.grittydude.brainscrambla.datasource.Constants
 
 class LoginPageFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginPageFragmentBinding
     private lateinit var auth: FirebaseAuth
     private val TAG = "GOOGLE-AUTH"
-    private lateinit var mGoogleSignInClient: GoogleSignInClient
+    //private lateinit var mGoogleSignInClient: GoogleSignInClient
     private lateinit var navController: NavController
     private lateinit var gso: GoogleSignInOptions
 
@@ -58,7 +52,7 @@ class LoginPageFragment : Fragment() {
             .requestEmail()
             .build()
 
-        mGoogleSignInClient = GoogleSignIn.getClient(requireContext(), gso)
+        //mGoogleSignInClient = GoogleSignIn.getClient(requireContext(), gso)
 
 
         binding.linear2.setOnClickListener {
@@ -92,23 +86,23 @@ class LoginPageFragment : Fragment() {
     }
 
     private fun googleSignIn() {
-        val signInIntent = mGoogleSignInClient.signInIntent
-        startActivityForResult(signInIntent, Constants.RC_SIGN_IN)
+        //val signInIntent = mGoogleSignInClient.signInIntent
+        //startActivityForResult(signInIntent, com.grittydude.brainscrambla.datasource.Constants.RC_SIGN_IN)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == Constants.RC_SIGN_IN) {
-            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
-            if (task.isSuccessful) {
-                try {
-                    val account = task.getResult(ApiException::class.java)
-                    googleAuthForFirebase(account.idToken!!)
-                } catch (e: ApiException) {
-
-                }
-            }
+//            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+//            if (task.isSuccessful) {
+//                try {
+//                    val account = task.getResult(ApiException::class.java)
+//                    googleAuthForFirebase(account.idToken!!)
+//                } catch (e: ApiException) {
+//
+//                }
+//            }
         }
     }
 

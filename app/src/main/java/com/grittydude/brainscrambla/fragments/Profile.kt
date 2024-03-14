@@ -1,4 +1,4 @@
-
+package com.grittydude.brainscrambla.fragments
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,16 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.squash.R
-import com.example.squash.databinding.FragmentProfileBinding
-import com.example.squash.datasource.PreferenceManager
-import com.example.squash.datasource.Users
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import com.grittydude.brainscrambla.R
 import com.grittydude.brainscrambla.databinding.FragmentProfileBinding
+import com.grittydude.brainscrambla.datasource.PreferenceManager
+import com.grittydude.brainscrambla.datasource.Users
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -70,8 +68,8 @@ class Profile : Fragment() {
                 navController.navigate(R.id.action_profile_to_menuFragment)
             }
             binding.editProfileBTN.setOnClickListener {
-                val action = ProfileDirections.actionProfileToEditProfile(user!!)
-                navController.navigate(action)
+//                val action = ProfileDirections.actionProfileToEditProfile(user!!)
+//                navController.navigate(action)
             }
         }
         return binding.root

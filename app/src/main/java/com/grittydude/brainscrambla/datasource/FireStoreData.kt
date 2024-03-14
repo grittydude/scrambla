@@ -1,15 +1,13 @@
-
+package com.grittydude.brainscrambla.datasource
 import android.content.Context
 import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.squash.datasource.Users
-import com.example.squash.fragments.EditProfile
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import java.util.*
+import com.grittydude.brainscrambla.fragments.EditProfile
 
 
 class FireStoreData {
@@ -49,7 +47,7 @@ class FireStoreData {
                 fragment.userInfoUpdateSuccess()
             }
             .addOnFailureListener {
-                Toast.makeText(context, "Profile Update failed", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "com.grittydude.brainscrambla.fragments.Profile Update failed", Toast.LENGTH_SHORT).show()
             }
 
     }

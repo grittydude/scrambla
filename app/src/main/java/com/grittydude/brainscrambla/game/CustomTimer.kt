@@ -1,3 +1,5 @@
+package com.grittydude.brainscrambla.game
+
 import android.os.CountDownTimer
 
 class CustomTimer(private val millisInFuture: Long, private val countDownInterval: Long) {

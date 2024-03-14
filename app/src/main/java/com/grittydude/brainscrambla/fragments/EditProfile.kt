@@ -1,4 +1,4 @@
-
+package com.grittydude.brainscrambla.fragments
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
@@ -22,6 +22,8 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 import com.grittydude.brainscrambla.R
 import com.grittydude.brainscrambla.databinding.FragmentEditProfileBinding
+import com.grittydude.brainscrambla.datasource.FireStoreData
+import com.grittydude.brainscrambla.datasource.PreferenceManager
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -40,7 +42,7 @@ class EditProfile : Fragment() {
     private lateinit var fireStoreData: FirebaseFirestore
     val requestCode = 0
     private lateinit var binding: FragmentEditProfileBinding
-    var preferenceManager: PreferenceManager? = null
+    private var preferenceManager: PreferenceManager? = PreferenceManager()
     private var imageRef = Firebase.storage.reference
     private val args by navArgs<EditProfileArgs>()
 
@@ -210,7 +212,7 @@ class EditProfile : Fragment() {
 
 
     fun userInfoUpdateSuccess(){
-        Toast.makeText(requireContext(), "Profile updated successfully", Toast.LENGTH_SHORT).show()
+        Toast.makeText(requireContext(), "com.grittydude.brainscrambla.fragments.Profile updated successfully", Toast.LENGTH_SHORT).show()
     }
 
     private fun uriToBitMap(selectedFileUri: Uri): Bitmap? {

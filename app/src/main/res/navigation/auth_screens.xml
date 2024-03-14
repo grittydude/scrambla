@@ -6,12 +6,12 @@
     app:startDestination="@id/login_page_fragment">
     <fragment
         android:id="@+id/forgot_password_fragment3"
-        android:name="com.example.squash.fragments.ForgotPasswordFragment"
+        android:name="com.grittydude.brainscrambla.fragments.ForgotPasswordFragment"
         android:label="Forgot_password_fragment"
         tools:layout="@layout/fragment_forgot_password_fragment"/>
     <fragment
         android:id="@+id/login_page_fragment"
-        android:name="com.example.squash.fragments.LoginPageFragment"
+        android:name="com.grittydude.brainscrambla.fragments.LoginPageFragment"
         android:label="Login_page_fragment"
         tools:layout="@layout/fragment_login_page_fragment">
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/register_fragment"
-        android:name="com.example.squash.fragments.RegisterFragment"
+        android:name="com.grittydude.brainscrambla.fragments.RegisterFragment"
         android:label="Register_fragment"
         tools:layout="@layout/fragment_register_fragment">
         <action

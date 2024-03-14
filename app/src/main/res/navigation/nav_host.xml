@@ -6,7 +6,7 @@
     app:startDestination="@id/splashScreenFragment">
     <fragment
         android:id="@+id/onBoardingScreen"
-        android:name="com.example.squash.fragments.OnBoardingScreen"
+        android:name="com.grittydude.brainscrambla.fragments.OnBoardingScreen"
         android:label="fragment_on_boarding_screen"
         tools:layout="@layout/fragment_on_boarding_screen" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/splashScreenFragment"
-        android:name="com.example.squash.fragments.SplashScreenFragment"
+        android:name="com.grittydude.brainscrambla.fragments.SplashScreenFragment"
         android:label="fragment_splash_screen"
         tools:layout="@layout/fragment_splash_screen" >
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <activity
         android:id="@+id/authScreens"
-        android:name="com.example.squash.activities.AuthScreenActivity"
+        android:name="com.grittydude.brainscrambla.activities.AuthScreenActivity"
         android:label="activity_auth_screens"
         tools:layout="@layout/activity_auth_screens" />
 </navigation>
