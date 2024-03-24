@@ -21,6 +21,16 @@
     <string name="wordcount">%d of %d words</string>
     <string name="score">Score : %d</string>
     <string name="hint">The first letter is: %s</string>
+    <string name="register_online">Register Online</string>
+    <string name="register_online_subtext">Sign in to BrainScrambla to begin an \n amazing, fun, and learning journey.</string>
+    <string name="get_started">Get Started</string>
+    <string name="get_started_subtext">Get started by choosing a category and a \n duration.</string>
+    <string name="have_fun_and_learn">Have Fun and Learn</string>
+    <string name="have_fun_subtext">Enjoy the game and learn new words in \n your chosen field as you play</string>
+    <string name="app_logo">App Logo</string>
+    <string name="next_button">next button</string>
+    <string name="let_s_scramble">Let\'s Scramble!</string>
+    <string name="skip">Skip</string>
     <string-array name="category">
         <item>Medicine</item>
         <item>Sport</item>
