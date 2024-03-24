@@ -106,13 +106,11 @@ class OnBoardingScreen : Fragment(), ViewPager.OnPageChangeListener {
                 binding.next.isEnabled = true
                 binding.next.visibility = View.VISIBLE
                 binding.getStarted.visibility = View.INVISIBLE
-                binding.next.text= "Next"
             }
             1 -> {
                 binding.next.isEnabled = true
                 binding.next.visibility = View.VISIBLE
                 binding.getStarted.visibility = View.INVISIBLE
-                binding.next.text= "Next"
             }
             2 -> {
                 binding.next.isEnabled = false

@@ -11,5 +11,9 @@
     <color name="cicrle">#1A428DFC</color>
     <color name="fade_black">#B3000000</color>
     <color name="snackBarFailure">#ff0000</color>
+    <color name="primary">#963BF3</color>
+    <color name="body_text">#222222</color>
+    <color name="hint_text">#66222222</color>
+    <color name="body_subtext_color">#CC222222</color>
 
 </resources>
